@@ -43,14 +43,21 @@ header ul {
 header ul a {
   display: block;
   padding: 0 0.8em;
+  margin-right: 2rem;
 }
 
 .hero {
   background: #E18F39;
   color: white;
-  display: flex;
+  display: grid;
+  grid-template-columns: 5fr 3fr;
   flex-direction: column;
   text-align: left;
+}
+
+.right-black {
+  background-color: black;
+  display: none;
 }
 
 .content {
@@ -147,6 +154,10 @@ header ul a {
     margin-left: 6rem;
   }
 
+  .right-black {
+    display: block;
+  }
+
   .featured {
     min-height: 70vh;
     display: grid;
@@ -165,5 +176,25 @@ header ul a {
 
   .project-title {
     margin-top: 2em;
+  }
+}
+@-webkit-keyframes text_reveal_box {
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+@keyframes text_reveal_box {
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
   }
 }/*# sourceMappingURL=main.css.map */

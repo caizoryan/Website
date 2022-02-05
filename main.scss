@@ -50,6 +50,7 @@ header{
         a{
             display: block;
             padding: 0 .8em;
+            margin-right: 2rem;
         }
     }
 
@@ -58,10 +59,16 @@ header{
 .hero{
     background: #E18F39;
     color: white;
-    display: flex;
+    display: grid;
+    grid-template-columns: 5fr 3fr;
     flex-direction:column;
     text-align: left;
 }
+.right-black{
+    background-color: black;
+    display: none;
+}
+
 .content{
     font-size: 1.2em;
     line-height: 2.5em;
@@ -121,7 +128,10 @@ header{
     margin-bottom: 2rem;
     min-height: 15rem;
     background-size: cover ;
+   
 }
+
+
 #byjus{
     background-image: url("/images/byjus-cover.jpg");
 }
@@ -159,7 +169,9 @@ header{
        
         }
     }
-
+.right-black{
+    display: block;
+}
  
     .featured{
         min-height: 70vh;
@@ -180,5 +192,17 @@ header{
         
     }.project-title{
         margin-top: 2em;
+    }
+}
+
+@keyframes text_reveal_box{
+    50%{
+        width: 100%;
+        left: 0;
+
+    }
+    100%{
+        width: 0;
+        left: 100%;
     }
 }
