@@ -93,6 +93,7 @@ header{
 .featured{
     display: flex;
     flex-direction: column;
+    // flex-wrap: wrap;
 }
 
 .project-title{
@@ -110,12 +111,29 @@ header{
     font-weight: 600;
     color: #E18F39;
     margin: 0 2.5rem;
-    
+   
 }
 
-.byjus{
+.project-image{
     padding-top: 3em;
     margin: 0 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    min-height: 15rem;
+    background-size: cover ;
+}
+#byjus{
+    background-image: url("/images/byjus-cover.jpg");
+}
+
+#provokal{
+    background-image: url("/images/provokal-cover.jpg");
+}
+.white{
+    color: white;
+}
+.black{
+    background-color: black;
 }
 
 @media only screen and (min-width: 800px) {
@@ -142,19 +160,18 @@ header{
         }
     }
 
+ 
     .featured{
-        flex-direction: row;
-    }
-    .featured{
-        // padding: 0;
-        .byjus{
+        min-height: 70vh;
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        .project-image{
             // margin-left: 8em;
-            margin-top: 0;
-            margin-right: 0;
+            margin: 0;
             padding: 0;
-            max-height: 35%;
-            max-width: 65%;
-            justify-content: flex-end;
+            background-size:cover;
+
+           
         }
     }
     .project-title, .project-subtitle{
