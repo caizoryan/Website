@@ -43,7 +43,6 @@ header ul {
 header ul a {
   display: block;
   padding: 0 0.8em;
-  margin-right: 2rem;
 }
 
 .hero {
@@ -172,6 +171,9 @@ header ul a {
 
   header .logo {
     margin-left: 4rem;
+  }
+  header ul a {
+    margin-right: 2rem;
   }
 
   .hero {
