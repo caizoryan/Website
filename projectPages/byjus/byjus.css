@@ -87,8 +87,8 @@ header ul a {
 
 .content {
   min-height: 100vh;
-  padding-left: 2.5rem;
-  padding-right: 1rem;
+  margin-left: 2.5rem;
+  margin-right: 1rem;
 }
 
 .mosiac-grid {
