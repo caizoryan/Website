@@ -71,7 +71,7 @@ header ul a {
         font-size: 2em;
         text-transform: uppercase;
         font-weight: 900;
-        line-height: 1.8em;
+        // line-height: 1.8em;
         
     }
     h2{
@@ -79,7 +79,7 @@ header ul a {
         text-transform: uppercase;
         font-weight: 400;
         line-height: 1em;
-        margin-top: -1.5em;
+        margin-top: -1.3em;
     }
     p{
         margin-top: -0.2em;
@@ -91,14 +91,14 @@ header ul a {
 
 .content{
   min-height: 100vh;
-  margin-left: 2.5rem;
-  margin-right: 1rem;
+  padding-left: 2.5rem;
+  padding-right: 1rem;
 }
 .mosiac-grid{
   display: grid;
-  grid-template-columns: repeat(4, 100px);
-  grid-template-rows: repeat(25, 100px);
-  grid-gap: 20px;
+  grid-template-columns: repeat(4, 60px);
+  grid-template-rows: repeat(38, 60px);
+  grid-gap: 10px;
   height: 100%;
   
 }
@@ -124,8 +124,90 @@ header ul a {
     grid-column: span 4;
     grid-row: span 3;
   }
+ 
+}
+@media only screen and (max-width: 300px){
+  body{
+    font-size: 9px;
+  }
+  content{
+    min-height: 100vh;
+    margin-left: 2.5rem;
+    margin-right: 1rem;
+  }
+  .mosiac-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 30px);
+    grid-template-rows: repeat(38, 30px);
+    grid-gap: 20px;
+    height: 100%;
+    
+  }
+  .image{
+    position:relative;
+    img{
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+    display: flex;
+    // min-height: 400px;
+    justify-content: center;
+    align-items: center;
+    // background: aqua;
+    &.large{
+      grid-column: span 4;
+      grid-row: span 6;
+    }
+  
+    &.medium{
+      grid-column: span 4;
+      grid-row: span 3;
+    }
+   
+  }
 }
 
+@media only screen and (min-width: 600px){
+  content{
+    min-height: 100vh;
+    margin-left: 2.5rem;
+    margin-right: 1rem;
+  }
+  .mosiac-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(38, 100px);
+    grid-gap: 20px;
+    height: 100%;
+    
+  }
+  .image{
+    position:relative;
+    img{
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+    display: flex;
+    // min-height: 400px;
+    justify-content: center;
+    align-items: center;
+    // background: aqua;
+    &.large{
+      grid-column: span 4;
+      grid-row: span 6;
+    }
+  
+    &.medium{
+      grid-column: span 4;
+      grid-row: span 3;
+    }
+   
+  }
+}
 
 @media only screen and (min-width: 800px){
     body {
@@ -140,7 +222,7 @@ header ul a {
     .mosiac-grid{
       display: grid;
       grid-template-columns: repeat(8, 70px);
-      grid-template-rows: repeat(25, 70px);
+      grid-template-rows: repeat(20, 70px);
       grid-gap: 20px;
       height: 100%;
     }
@@ -158,6 +240,7 @@ header ul a {
         grid-column: span 4;
         grid-row: span 3;
       }
+     
     }
 }
   
@@ -182,7 +265,7 @@ header ul a {
       .mosiac-grid{
         display: grid;
         grid-template-columns: repeat(8, 100px);
-        grid-template-rows: repeat(25, 100px);
+        grid-template-rows: repeat(20, 100px);
         grid-gap: 20px;
         height: 100%;
         
@@ -201,6 +284,7 @@ header ul a {
           grid-column: span 4;
           grid-row: span 3;
         }
+  
       }
   }
     
@@ -236,7 +320,7 @@ header ul a {
             .mosiac-grid{
               display: grid;
               grid-template-columns: repeat(8, 100px);
-              grid-template-rows: repeat(25, 100px);
+              grid-template-rows: repeat(20, 100px);
               grid-gap: 20px;
               height: 100%;
               
