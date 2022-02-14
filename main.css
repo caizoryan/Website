@@ -36,6 +36,10 @@ header {
 header .logo {
   font-weight: 600;
   margin: 0 1rem;
+  transition: all 200ms ease-in;
+}
+header .logo:hover {
+  color: #E18F39;
 }
 header ul {
   display: flex;
