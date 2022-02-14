@@ -4,6 +4,8 @@ body {
   height: 100vh;
   margin: 0;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
+  background-color: black;
+  color: white;
 }
 
 ul {
@@ -22,10 +24,10 @@ img {
 }
 
 .nav-container {
-  background: black;
+  background: white;
 }
 .nav-container a {
-  color: white;
+  color: black;
 }
 
 header {
@@ -52,7 +54,7 @@ header ul a {
    
     .black-box{
         height: 8rem;
-        background-color: black;
+        background-color: white;
         border: red 2px;
     }
     img{
