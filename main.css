@@ -88,6 +88,10 @@ header ul a {
 .scroll {
   width: 30px;
   margin: 2em 2.5rem;
+  transition: all 100ms ease-in;
+}
+.scroll:hover {
+  transform: scale(1.2);
 }
 
 .featured {
