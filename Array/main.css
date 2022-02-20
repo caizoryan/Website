@@ -62,6 +62,12 @@ header ul a:hover span {
   display: none;
 }
 
+.hero-container {
+  position: relative;
+}
+.hero-container svg {
+  display: none;
+}
 .hero-container .hero-text {
   padding-left: 3em;
 }
@@ -71,9 +77,6 @@ header ul a:hover span {
   text-transform: uppercase;
   line-height: 1em;
   position: relative;
-}
-.hero-container .hero-text svg {
-  display: none;
 }
 .hero-container .hero-image {
   overflow: hidden;
@@ -115,6 +118,7 @@ header ul a:hover span {
   header ul {
     display: flex;
     font-size: 0.625em;
+    padding-right: 0;
   }
 
   #a {
@@ -128,30 +132,15 @@ header ul a:hover span {
   .hero-container {
     max-width: 1100px;
   }
+  .hero-container .hero-text {
+    position: relative;
+    margin-top: -2.8em;
+  }
   .hero-container .hero-text h1 {
     font-weight: 900;
     font-size: 4.5em;
     line-height: 1em;
     position: relative;
-  }
-  .hero-container .hero-text svg {
-    margin-left: 99%;
-    width: 3em;
-    display: flex;
-  }
-  .hero-container .hero-text svg circle {
-    fill: black;
-    transition: all ease 200ms;
-  }
-  .hero-container .hero-text svg path {
-    stroke: white;
-    transition: all ease 200ms;
-  }
-  .hero-container .hero-text svg:hover circle {
-    fill: white;
-  }
-  .hero-container .hero-text svg:hover path {
-    stroke: black;
   }
   .hero-container .hero-image {
     margin-left: -15em;
@@ -165,7 +154,7 @@ header ul a:hover span {
   }
   .nav-container header {
     width: 100%;
-    max-width: 1100px;
+    max-width: 1250px;
     padding-bottom: 0;
   }
 
@@ -175,22 +164,49 @@ header ul a:hover span {
     align-items: center;
   }
 
+  .hero-container svg {
+    padding-top: 53%;
+    width: 3em;
+    display: flex;
+  }
+  .hero-container svg circle {
+    fill: black;
+    transition: all ease 200ms;
+  }
+  .hero-container svg path {
+    stroke: white;
+    transition: all ease 200ms;
+  }
+  .hero-container svg:hover circle {
+    fill: white;
+  }
+  .hero-container svg:hover path {
+    stroke: black;
+  }
   .hero-container .hero-text h1 {
     font-size: 4.5em;
     line-height: 1.1em;
   }
   .hero-container .hero-image {
-    margin-left: -2em;
+    margin-left: -8em;
     margin-right: 2em;
     padding: 0;
   }
   .hero-container .hero-image img {
     width: 100%;
-    max-width: 800px;
+    max-width: 900px;
   }
 }
-@media only screen and (max-width: 950px) {
-  .hero-container .hero-text svg {
-    margin-left: 80%;
+@media only screen and (min-width: 1200px) {
+  body {
+    font-size: 18px;
+  }
+
+  .nav-container header {
+    padding-right: 8em;
+  }
+
+  .contain .hero-container svg {
+    padding-top: 50.5%;
   }
 }/*# sourceMappingURL=main.css.map */
