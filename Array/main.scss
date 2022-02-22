@@ -18,6 +18,53 @@ a{
     text-decoration: none;
 }
 
+.mobile-nav-container{
+
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    .mobile-nav{
+        transform: translate(100%);
+        position: absolute;
+        width: 90%;
+        height: 100vh;
+        background-color: white;
+        z-index: 99;
+
+        .close{
+            width: 25px;
+            float: right;            
+            padding: 2em;
+        }
+        ul{
+            list-style-type: none;
+            text-transform: uppercase;
+            margin-top: 40%;
+            margin-left: 20%;
+            li{
+                a{
+                color: black;
+                font-weight: 400;
+                font-size: 1.5em;
+
+
+                }
+                padding-top: 3em;
+                
+
+            }
+        }
+    }
+
+  
+    .smooth{
+        transition: all 500ms ease-in-out;
+    }
+    .open-nav{
+        transform: translate(0%);
+     }
+}
 
 
 .nav-container {
@@ -42,7 +89,6 @@ header{
     .hamburger{
         width: 2em;
         height: 2em;
-
     }
 
     ul{
