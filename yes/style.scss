@@ -1,0 +1,99 @@
+@import url("https://use.typekit.net/tlb1wtf.css");
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    // color: white;
+    font-family: 'itc-avant-garde-gothic-pro'; 
+  }
+  
+  canvas {
+    display: flex;
+  }
+
+a{
+  text-decoration: none;
+}
+
+
+.nav-container {
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.6em;
+    padding-left: 4em;
+    
+    .lo{
+        display: flex;
+        flex-direction: row;
+    }
+    .rectangle{
+        width: 30px;
+        height: 30px;
+        transition: all 100ms ease;
+        background: #dddddd;
+    }
+ 
+    .logo{
+        font-weight: 500;
+        font-size: 1em;
+        margin: 0 -1em;
+        transition: all 100ms ease-in;
+        color: black;
+        
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+    
+    ul{
+        display: flex;
+        padding-right: 1em;
+
+        a{
+            display: block;
+            padding: 0 .8em;
+        
+            
+        }
+    }
+
+}
+  .main{
+    .container{
+      height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      .text{
+        position: absolute;
+          bottom: 0;
+          font-size: 3.2vw;
+          margin-left: 1.3em;
+        h1{
+          font-weight: 300;
+          margin-bottom: 7%;
+        }
+        svg{
+          margin-bottom: 7%;
+        }
+      }.p5-container{
+        padding-left: 2%;
+        position: absolute;
+        right: 0;
+        height: 100vh;
+        padding-right: 10%;
+        width: 30vw;
+       
+      }
+    }
+  }
