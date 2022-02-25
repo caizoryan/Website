@@ -30,11 +30,11 @@ function draw() {
   background(bg);
   strokeWeight(s);
 
-  for(let x = -200; x<width; x+=size){
+  for(let x = -800; x<width; x+=size){
     beginShape();
     stroke(c);
     noFill();
-    for(let y = -400; y<height; y+=size){
+    for(let y = -1000; y<height; y+=size){
       let r = map(mouseX, 0, width, 15, 20);
       let n = noise(xoff)*r;
       let f = noise(yoff)*r;
