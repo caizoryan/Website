@@ -123,7 +123,7 @@ header{
     .hero-text{
         padding-left: 3em;
         h1{
-            font-size: 4.7em;
+            font-size: 18vw;
             color: white;
             text-transform: uppercase;
             line-height: 1em;
@@ -137,7 +137,7 @@ header{
         overflow: hidden;
         padding-left: 4em;
         img{
-            width: 600px;
+            width: 120vw;
         }
     }
 }
@@ -151,8 +151,8 @@ header{
         .hero-text{
             padding: 2em;
             h1{
-                font-size: 3.5em;
-                line-height: 1.2em;
+                font-size: 12vw;
+                line-height: 1em;
             }
            
         }
@@ -161,7 +161,7 @@ header{
             margin-left: -20em;
             overflow: visible;
             img{
-                width: 500px;
+                //width: 500px;
                 padding: 0;
                 margin: 0;
             }
@@ -177,27 +177,28 @@ header{
     header{
         ul{
         display: flex;
-        font-size: .625em;
+        font-size: 0.625em;
         padding-right: 0;
         }
     }
 
     #a{
-        max-width: 200px;
+        max-width: 25vw;
         font-weight: 200;
         margin-top: -1em;
-        font-size: .625em;
+        font-size: 1.2vw;
         display:block;
     }
     .hero-container{
-        max-width: 1100px;
+        margin-top: 4vh;
+        //max-width: 1100px;
         
         .hero-text{
             position: relative;
             margin-top: -2.8em;
             h1{
                 font-weight: 900;
-                font-size: 4.5em;
+                font-size: 10vw;
                 line-height: 1em;
                 position: relative;
             }
@@ -218,7 +219,7 @@ header{
         justify-content: center;
         header{
             width: 100%;
-            max-width: 1250px;
+            max-width: 90vw;
             padding-bottom: 0;
         }
     }
@@ -252,8 +253,8 @@ header{
         }
         .hero-text{
             h1{
-                font-size: 4.5em;
-                line-height: 1.1em;
+                font-size: 10vw;
+                line-height: 1em;
             }
         }
         .hero-image{
@@ -261,9 +262,8 @@ header{
             margin-right: 2em;
             padding: 0;
             img{
-                
                 width: 100%;
-                max-width: 900px;
+                //max-width: 900px;
             }
         }
     }
@@ -271,16 +271,33 @@ header{
 
 
 @media only screen and (min-width: 1200px) {
-    body{
-        font-size: 18px;
+    #a{
+        font-size: 0.8vw;
     }
-    .nav-container{
-        header{
-            padding-right: 8em;
+    header{
+        ul{
+        font-size: 0.8vw;
         }
     }
+//     body{
+//         font-size: 18px;
+//     }
+//     .nav-container{
+//         header{
+//             padding-right: 8em;
+//         }
+//     }
     .contain{
         .hero-container{
+            .hero-image{
+                width: 45vw;
+            }
+            .hero-text{
+                h1{
+                    font-size: 8vw;
+                }
+                
+            }
             svg{
                 padding-top: 50.5%;
             }
